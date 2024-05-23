@@ -1,0 +1,13 @@
+To create/apply only one resource from the configuration file,command is
+
+terraform apply -target=< resourcetype >.< resourcename >
+ex:- terraform apply -target=aws_instance.mrinstance 
+
+It will create only mrinstance
+
+Todestroy only particular resource,
+
+terraform destroy -target=<resourcetype>.<resourcename>
+
+ex:-To destroy only MRbucket,
+terraform destroy -target=aws_s3_bucket.MRbucket
