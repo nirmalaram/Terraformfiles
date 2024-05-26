@@ -8,6 +8,6 @@ resource "aws_instance" "server1" {
   
 }
 resource "aws_s3_bucket" "bucket1" {
-    bucket="jenkins-terraform-may25"
+    bucket="may25jenkins-terraform"
   
 }
