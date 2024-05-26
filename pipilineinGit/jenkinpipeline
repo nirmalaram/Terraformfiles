@@ -1,0 +1,24 @@
+node {
+    
+    stage('gitclone') { 
+        git branch: 'main', url: 'https://github.com/nirmalaram/nirTerraformfiles.git'
+       
+    }
+    stage('init') {
+        dir('local'){
+        sh 'terraform init'
+        }
+        
+    }
+    stage('plan') {
+        dir('local'){
+        sh 'terraform plan'
+        }
+        
+    }
+    stage('apply') {
+        dir('local'){
+        sh 'terraform ${action} -auto-approve'
+        }
+    }
+}
