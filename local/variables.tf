@@ -4,7 +4,7 @@ variable "layer" {
   
 }
 variable "env" {
-    default = "dev"
+    default = "nirmala"
     type = string
   
 }
