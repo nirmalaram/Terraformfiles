@@ -1,6 +1,6 @@
 node {
     
-    stage('gitclone') { 
+    stage('gitclon') { 
         git branch: 'main', url: 'https://github.com/nirmalaram/nirTerraformfiles.git'
        
     }
