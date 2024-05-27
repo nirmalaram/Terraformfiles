@@ -3,7 +3,7 @@ resource "aws_instance" "test"{
     instance_type = "t2.micro"
     key_name = "NVirginia32"
     tags = {
-      Name="server3"
+      Name="server2"
     }
 }
 terraform {
