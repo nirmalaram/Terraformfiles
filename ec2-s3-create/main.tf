@@ -3,7 +3,7 @@ resource "aws_instance" "server1" {
     instance_type = var.instancetype
     key_name = var.keyname
     tags = {
-        Name="Myec2new"
+        Name="Myec2server"
     }
   
 }
